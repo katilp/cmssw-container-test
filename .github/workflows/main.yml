@@ -20,8 +20,8 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: output
-          path: ${{ steps.inspect.outputs.fiename }}       
+          path: ${{ steps.inspect.outputs.output-file-name }}       
       - name: Output time and name
         run: |
           echo "The time is ${{ steps.inspect.outputs.time }}"
-          echo "Log file name is ${{ steps.inspect.outputs.filename }}"
+          echo "Log file name is ${{ steps.inspect.outputs.output-file-name }}"
