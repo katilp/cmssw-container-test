@@ -25,4 +25,4 @@ cp dump.txt /github/workspace
 # now the commands are directly in this script and not passeed to image through exec, not sure if good practice
 #exec "$@"
 
-echo "::set-output name=another_output::dump.txt"
+echo "::set-output name=filename::dump.txt"
