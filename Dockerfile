@@ -6,7 +6,7 @@ COPY entrypoint.sh /entrypoint.sh
 
 # Change the permission of the entrypoint script. It can also be done on command line, but doing it here removes the need of local download.
 USER root
-RUN /bin/bash -c 'chmod +x /entrypoint.sh'
+RUN chmod +x /entrypoint.sh
 USER cmsusr
 
 # Executes `entrypoint.sh` when the Docker container starts up 
