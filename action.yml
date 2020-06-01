@@ -13,8 +13,8 @@ inputs:
 outputs:
   time: # output time
     description: 'Time'
-  filename: # output file
-    description: 'Another output'
+  output-file-name: # output file
+    description: 'Output file'
 runs:
   using: 'docker'
   image: 'Dockerfile'
