@@ -15,8 +15,8 @@ cd $2/src
 eval `scramv1 runtime -sh`
 echo "$2 is at your service."
 
- 
-edmProvDump --sort $1 > dump.txt
+# This script only dumps the event content of one open data file. Here one could as well have a short cmsRun jon analyzing data.
+edmDumpEventContent $1 > dump.txt
 sudo chown -R cmsusr /github/workspace
 chmod 755 /github/workspace
 cp dump.txt /github/workspace
